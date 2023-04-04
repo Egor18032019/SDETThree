@@ -1,18 +1,17 @@
 package models;
 
+import lombok.*;
+
+/**
+ * Класс содержит ability и его дополнительные свойства
+ */
+@Data
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Skill {
-    private String name;
-    private String url;
-
-    public String getName() {
-        return name;
-    }
-
-    @Override
-    public String toString() {
-        return "Skill{" +
-                "name='" + name + '\'' +
-                ", url='" + url + '\'' +
-                '}';
-    }
+    Ability ability;
+    Boolean is_hidden;
+    Integer slot;
 }
