@@ -1,10 +1,7 @@
 package tests;
 
-import com.google.gson.Gson;
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
-import models.Skill;
 import models.PokemonModel;
+import models.Skill;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import requests.AbilitiesPokemonRequests;
@@ -16,6 +13,12 @@ import java.util.ArrayList;
  * Проверка покемона на вес и умение
  */
 public class TestRattataForWeightAndSkill {
+    /**
+     * Метод вызывает метод getAbilitiesPokemon для получения свойства покемонов  rattata и pidgeotto
+     * далее проверяет что у
+     * покемона rattata, в отличие от покемона pidgeotto, меньше вес и есть умение
+     * (ability) побег (run-away
+     */
     @Test
     public void CheckingRattataForWeightAndSkillTest() {
 
