@@ -4,6 +4,8 @@ import com.google.gson.Gson;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import models.PokemonModel;
+import org.apache.http.HttpStatus;
+import utils.Const;
 
 /**
  * Класс для выполнения запроса
@@ -20,12 +22,12 @@ public class AbilitiesPokemonRequests {
      */
     public static PokemonModel getAbilitiesPokemon(String namePokemon) {
         String responsePokemon = RestAssured.given()
-                .baseUri("https://pokeapi.co/api/v2/")
+                .baseUri(Const.baseUrl)
                 .contentType(ContentType.JSON)
                 .when()
-                .get("/pokemon/" + namePokemon)
+                .get(Const.pokemon + namePokemon)
                 .then()
-                .statusCode(200)
+                .statusCode(HttpStatus.SC_OK)
                 .extract().asString();
         return new Gson().fromJson(responsePokemon, PokemonModel.class);
     }

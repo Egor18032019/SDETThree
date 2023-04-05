@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="173e808b-87ac-433c-9899-a44862137a27" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/models/Opt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/models/PokemonModels.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/models/Skill.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/FirstTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/FirstTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/requests/AbilitiesPokemonRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/requests/AbilitiesPokemonRequests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utils/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Const.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,16 +33,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Hobby/Git/SDET/APITest",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Hobby/Git/SDET/APITest&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="FirstTestCase.postmanFirstGetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDETthree" />
@@ -78,7 +74,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680604768583</updated>
-      <workItem from="1680604772224" duration="8953000" />
+      <workItem from="1680604772224" duration="9135000" />
+      <workItem from="1680671624170" duration="942000" />
     </task>
     <servers />
   </component>
