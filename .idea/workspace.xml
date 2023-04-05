@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="173e808b-87ac-433c-9899-a44862137a27" name="Changes" comment="" />
+    <list default="true" id="173e808b-87ac-433c-9899-a44862137a27" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/Pokemon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/PokemonLimitModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/TestListOnLimitAndHasName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/Ability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/Ability.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/PokemonModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/PokemonPropertyModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/requests/AbilitiesPokemonRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/requests/PokemonRequests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestRattataForWeightAndSkill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestRattataForWeightAndSkill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Const.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +49,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.TestListOnLimitAndHasName.CheckLimitAndHasName">
     <configuration name="FirstTestCase.postmanFirstGetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SDETthree" />
       <extension name="coverage">
@@ -56,8 +66,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestListOnLimitAndHasName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SDETthree" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TestListOnLimitAndHasName" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestListOnLimitAndHasName.CheckLimitAndHasName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SDETthree" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TestListOnLimitAndHasName" />
+      <option name="METHOD_NAME" value="CheckLimitAndHasName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestListOnLimitAndHasName.CheckLimitAndHasName" />
+        <item itemvalue="JUnit.TestListOnLimitAndHasName" />
         <item itemvalue="JUnit.FirstTestCase.postmanFirstGetTest" />
       </list>
     </recent_temporary>
@@ -71,7 +114,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680604768583</updated>
       <workItem from="1680604772224" duration="9135000" />
-      <workItem from="1680671624170" duration="1611000" />
+      <workItem from="1680671624170" duration="6151000" />
     </task>
     <servers />
   </component>

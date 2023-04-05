@@ -9,6 +9,11 @@ public class Const {
      * endpoint где можно взять свойства покемона
      */
     public static final String pokemon = "/pokemon/";
+    /**
+     * Имя покемона pidgeotto
+     */
+    public static final String pidgeottoName = "pidgeotto";
+    public static final String rattataName = "rattata";
     public static final String pokemonAbilitiRunAway = "run-away";
 
 }

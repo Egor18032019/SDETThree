@@ -1,10 +1,10 @@
 package tests;
 
-import models.PokemonModel;
+import models.PokemonPropertyModel;
 import models.Skill;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import requests.AbilitiesPokemonRequests;
+import requests.PokemonRequests;
 import utils.Const;
 
 import java.util.ArrayList;
@@ -22,13 +22,12 @@ public class TestRattataForWeightAndSkill {
      */
     @Test
     public void CheckingRattataForWeightAndSkillTest() {
-
-        PokemonModel pidgeotto = AbilitiesPokemonRequests.getAbilitiesPokemon("pidgeotto");
-        PokemonModel rattata = AbilitiesPokemonRequests.getAbilitiesPokemon("rattata");
+        PokemonPropertyModel pidgeotto = PokemonRequests.getAbilitiesPokemon(Const.pidgeottoName);
+        PokemonPropertyModel rattata = PokemonRequests.getAbilitiesPokemon(Const.rattataName);
         int rattataWeight = Integer.parseInt(rattata.getWeight());
         int pidgeottoWeight = Integer.parseInt(pidgeotto.getWeight());
         boolean isWeightRattataLess = rattataWeight < pidgeottoWeight;
-        Assertions.assertTrue(isWeightRattataLess, "У rattata вес больше чем у pidgeottoWeight");
+        Assertions.assertTrue(isWeightRattataLess, "У" + Const.rattataName + " вес больше чем у " + Const.pidgeottoName);
 
         ArrayList<Skill> abilities = rattata.getAbilities();
         boolean isHaveRunAway = false;
@@ -39,7 +38,7 @@ public class TestRattataForWeightAndSkill {
                 break;
             }
         }
-        Assertions.assertTrue(isHaveRunAway, "У rattata нет умения - " + Const.pokemonAbilitiRunAway);
+        Assertions.assertTrue(isHaveRunAway, "У" + Const.rattataName + " нет умения - " + Const.pokemonAbilitiRunAway);
     }
 }
 

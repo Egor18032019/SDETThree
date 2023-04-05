@@ -12,7 +12,7 @@ import java.util.ArrayList;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class PokemonModel {
+public class PokemonPropertyModel {
     private ArrayList<Skill> abilities;
     private String weight;
 }
