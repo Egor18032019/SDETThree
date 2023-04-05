@@ -21,7 +21,7 @@ public class TestRattataForWeightAndSkill {
      * (ability) побег (run-away
      */
     @Test
-    public void CheckingRattataForWeightAndSkillTest() {
+    public void checkingRattataForWeightAndSkillTest() {
         PokemonPropertyModel pidgeotto = PokemonRequests.getAbilitiesPokemon(Const.pidgeottoName);
         PokemonPropertyModel rattata = PokemonRequests.getAbilitiesPokemon(Const.rattataName);
         int rattataWeight = Integer.parseInt(rattata.getWeight());

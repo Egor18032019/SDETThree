@@ -1,10 +1,17 @@
 package models;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
+/**
+ * Класс описывает покемона (name и url)
+ */
 @Setter
 @Getter
+@ToString
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Pokemon {
     /**
      * Имя покемона
@@ -15,11 +22,4 @@ public class Pokemon {
      */
     private String url;
 
-    @Override
-    public String toString() {
-        return "Pokemon{" +
-                "name='" + name + '\'' +
-                ", url='" + url + '\'' +
-                '}';
-    }
 }

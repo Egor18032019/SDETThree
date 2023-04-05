@@ -20,25 +20,15 @@ public class TestListOnLimitAndHasName {
      * Далее у каждого элемента проверяется что поле не name не пустое или равно "null"
      */
     @Test
-    public void CheckLimitAndHasName() {
+    public void checkLimitAndHasNameTest() {
         PokemonLimitModel listTenPokemons = PokemonRequests.getLimitListPokemon(10);
         PokemonLimitModel listNinePokemons = PokemonRequests.getLimitListPokemon(9);
         ArrayList<Pokemon> pokemons = listNinePokemons.getResults();
         boolean isHaveLimit = listTenPokemons.getResults().size() == 10 && pokemons.size() == 9;
         Assertions.assertTrue(isHaveLimit, "Пришёл не лимитированный список");
         boolean allPokemonsHaveName = true;
+
         for (Pokemon pokemon : pokemons) {
-// мы проверяем что пришло Pokemon{
-//                "name="",
-//                "url"="https://pokeapi.co/api/v2/pokemon/"
-//                };
-            // или то что именно в name пустая строка
-            // или то что пришло
-//            Pokemon{
-//                "url"="https://pokeapi.co/api/v2/pokemon/"
-//                }";
-            //Pokemon без поля name
-            // не понятно из ТЗ
             String name = pokemon.getName().trim();
             if (name.equals("") || name.equals("null")) {
                 allPokemonsHaveName = false;

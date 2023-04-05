@@ -1,8 +1,15 @@
 package models;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
 /**
  * Класс описывает ability (name и url)
  */
+@Setter
+@Getter
+@ToString
 public class Ability {
     /**
      * Название абилики у покемона
@@ -12,16 +19,4 @@ public class Ability {
      * url который ведет на страницу с полным описание этой абилки
      */
     private String url;
-
-    public String getName() {
-        return name;
-    }
-
-    @Override
-    public String toString() {
-        return "Ability{" +
-                "name='" + name + '\'' +
-                ", url='" + url + '\'' +
-                '}';
-    }
 }
