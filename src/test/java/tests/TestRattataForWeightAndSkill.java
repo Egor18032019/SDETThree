@@ -5,6 +5,7 @@ import models.Skill;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import requests.AbilitiesPokemonRequests;
+import utils.Const;
 
 import java.util.ArrayList;
 
@@ -33,12 +34,12 @@ public class TestRattataForWeightAndSkill {
         boolean isHaveRunAway = false;
         for (Skill ability : abilities) {
             String abillityName = ability.getAbility().getName();
-            if (abillityName.equals("run-away")) {
+            if (abillityName.equals(Const.pokemonAbilitiRunAway)) {
                 isHaveRunAway = true;
                 break;
             }
         }
-        Assertions.assertTrue(isHaveRunAway, "У rattata нет умения run-away");
+        Assertions.assertTrue(isHaveRunAway, "У rattata нет умения - " + Const.pokemonAbilitiRunAway);
     }
 }
 

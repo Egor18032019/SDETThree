@@ -9,5 +9,6 @@ public class Const {
      * endpoint где можно взять свойства покемона
      */
     public static final String pokemon = "/pokemon/";
+    public static final String pokemonAbilitiRunAway = "run-away";
 
 }
