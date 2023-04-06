@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.Description;
 import models.PokemonPropertyModel;
 import models.Skill;
 import org.junit.jupiter.api.Assertions;
@@ -21,6 +22,7 @@ public class TestRattataForWeightAndSkill {
      * (ability) побег (run-away
      */
     @Test
+    @Description("Проверка, что у покемона rattata, в отличие от покемона pidgeotto, меньше вес и есть умение (ability) побег (" + Const.pokemonAbilitiRunAway + ")")
     public void checkingRattataForWeightAndSkillTest() {
         PokemonPropertyModel pidgeotto = PokemonRequests.getAbilitiesPokemon(Const.pidgeottoName);
         PokemonPropertyModel rattata = PokemonRequests.getAbilitiesPokemon(Const.rattataName);

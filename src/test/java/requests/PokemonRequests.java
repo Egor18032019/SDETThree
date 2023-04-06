@@ -1,6 +1,7 @@
 package requests;
 
 import com.google.gson.Gson;
+import io.qameta.allure.Step;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import models.PokemonLimitModel;
@@ -19,8 +20,9 @@ public class PokemonRequests {
      * и возвращает модель покемона с необходимыми свойствами
      *
      * @param namePokemon имя покемона чьи свойства нужны
-     * @return
+     * @return PokemonPropertyModel
      */
+    @Step("Запрос свойств покемона")
     public static PokemonPropertyModel getAbilitiesPokemon(String namePokemon) {
         String responsePokemon = RestAssured.given()
                 .baseUri(Const.baseUrl)
@@ -33,6 +35,7 @@ public class PokemonRequests {
         return new Gson().fromJson(responsePokemon, PokemonPropertyModel.class);
     }
 
+    @Step("Запрос списка с лимитом {limit}")
     public static PokemonLimitModel getLimitListPokemon(int limit) {
         String responsePokemons = RestAssured.given()
                 .baseUri(Const.baseUrl)
@@ -42,5 +45,6 @@ public class PokemonRequests {
                 .then()
                 .statusCode(HttpStatus.SC_OK)
                 .extract().asString();
-        return new Gson().fromJson(responsePokemons, PokemonLimitModel.class);    }
+        return new Gson().fromJson(responsePokemons, PokemonLimitModel.class);
+    }
 }
