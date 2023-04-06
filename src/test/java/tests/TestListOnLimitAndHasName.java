@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.Description;
 import models.Pokemon;
 import models.PokemonLimitModel;
 import org.junit.jupiter.api.Assertions;
@@ -20,6 +21,7 @@ public class TestListOnLimitAndHasName {
      * Далее у каждого элемента проверяется что поле не name не пустое или равно "null"
      */
     @Test
+    @Description("Проверка ограничение списка (limit) покемонов и то, что у каждого покемона в ограниченном списке есть имя (name)")
     public void checkLimitAndHasNameTest() {
         PokemonLimitModel listTenPokemons = PokemonRequests.getLimitListPokemon(10);
         PokemonLimitModel listNinePokemons = PokemonRequests.getLimitListPokemon(9);
