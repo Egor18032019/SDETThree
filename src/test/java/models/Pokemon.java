@@ -11,7 +11,6 @@ import lombok.ToString;
 @Setter
 @Getter
 @ToString
-@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Pokemon {
     /**
      * Имя покемона
@@ -21,5 +20,4 @@ public class Pokemon {
      * url который ведет на страницу с полным описание этого покемона
      */
     private String url;
-
 }
