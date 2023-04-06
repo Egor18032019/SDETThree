@@ -4,15 +4,19 @@ import models.PokemonPropertyModel;
 import models.Skill;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.parallel.Execution;
 import requests.PokemonRequests;
 import utils.Const;
 
 import java.util.ArrayList;
 
+import static org.junit.jupiter.api.parallel.ExecutionMode.CONCURRENT;
+
 /**
  * Тест кейс T1
  * Проверка покемона на вес и умение
  */
+@Execution(CONCURRENT)
 public class TestRattataForWeightAndSkill {
     /**
      * Метод вызывает метод getAbilitiesPokemon для получения свойства покемонов  rattata и pidgeotto

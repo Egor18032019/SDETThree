@@ -4,15 +4,19 @@ import models.Pokemon;
 import models.PokemonLimitModel;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.parallel.Execution;
 import requests.PokemonRequests;
 
 import java.util.ArrayList;
+
+import static org.junit.jupiter.api.parallel.ExecutionMode.CONCURRENT;
 
 /**
  * Тест кейс T2
  * Проверить ограничение списка (limit) покемонов и то, что у каждого покемона в
  * ограниченном списке есть имя (name)
  */
+@Execution(CONCURRENT)
 public class TestListOnLimitAndHasName {
     /**
      * Метод вызывает метод getLimitListPokemon с разными лимитами
